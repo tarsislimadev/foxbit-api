@@ -8,7 +8,19 @@ To get data from Foxbit.
 
 ## how to install
 
+### .env file
+
+```
+DATABASE=./data
+```
+
 ## how to use
+
+### Buy 1 Tether (USDT) in Brazilian Real (BRL)
+
+```
+bash ./src/markets.quotes.sh buy 1 usdt brl 
+```
 
 ## license
 
