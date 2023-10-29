@@ -22,6 +22,12 @@ DATABASE=./data
 bash ./src/markets.quotes.sh buy 1 usdt brl 
 ```
 
+### Get BTCBRL "1 day candles" by 1 week ago
+
+```
+bash ./src/markets.candles.sh btcbrl 1d 1week 
+```
+
 ## license
 
 [MIT](./LICENSE)
