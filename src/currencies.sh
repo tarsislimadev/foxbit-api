@@ -2,14 +2,14 @@
 
 ## inputs
 
-path="currencies"
-
 . datetime.sh
+
+path="currencies"
 
 ## runners
 
-resp=$( bash get.sh "${path}" "" )
+resp=$( . get.sh "${path}" "" )
 
 ## outputs
 
-bash create.sh "${path}" "${datetime}" "resp" "${resp}"
+. create.sh "${path}" "${datetime}" "resp" "${resp}"

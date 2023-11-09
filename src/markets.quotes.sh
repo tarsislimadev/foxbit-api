@@ -2,6 +2,8 @@
 
 ## inputs
 
+. datetime.sh
+
 path="markets/quotes"
 
 side="${1}"
@@ -12,12 +14,10 @@ base_currency="${3}"
 
 quote_currency="${4}"
 
-. datetime.sh
-
 ## runners
 
-resp=$( bash get.sh "${path}" "side=${side}&base_currency=${base_currency}&quote_currency=${quote_currency}&amount=${amount}" )
+resp=$( . get.sh "${path}" "side=${side}&base_currency=${base_currency}&quote_currency=${quote_currency}&amount=${amount}" )
 
 ## outputs
 
-bash create.sh "${path}" "${datetime}" "resp" "${resp}"
+. create.sh "${path}" "${datetime}" "resp" "${resp}"

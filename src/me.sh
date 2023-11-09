@@ -8,8 +8,8 @@ path="me"
 
 ## runners
 
-resp=$( bash post.sh "${path}" "" )
+resp=$( . post.sh "${path}" "" )
 
 ## outputs
 
-bash create.sh "${path}" "${datetime}" "resp" "${resp}"
+. create.sh "${path}" "${datetime}" "resp" "${resp}"

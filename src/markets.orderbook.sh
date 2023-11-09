@@ -10,8 +10,8 @@ path="markets/${market_symbol}/orderbook"
 
 ## runners
 
-resp=$( bash get.sh "${path}" "" )
+resp=$( . get.sh "${path}" "" )
 
 ## outputs
 
-bash create.sh "${path}" "${datetime}" "resp" "${resp}"
+. create.sh "${path}" "${datetime}" "resp" "${resp}"

@@ -18,8 +18,8 @@ path="markets/${market_symbol}/candles"
 
 ## runners
 
-resp=$( bash get.sh "${path}" "interval=${interval}&start_time=${start_time}&end_time=${end_time}" )
+resp=$( . get.sh "${path}" "interval=${interval}&start_time=${start_time}&end_time=${end_time}" )
 
 ## outputs
 
-bash create.sh "${path}" "${datetime}" "resp" "${resp}"
+. create.sh "${path}" "${datetime}" "resp" "${resp}"
